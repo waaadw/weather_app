@@ -19,7 +19,7 @@ body{
     box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
 }
 .container .fon{
-    width: auto;
+    max-width: 100%;
     position: absolute;
 }
 .search-box, .inform-center, .details-info, .inform-left, .inform-right{
