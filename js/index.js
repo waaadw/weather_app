@@ -80,13 +80,13 @@ search.addEventListener('click', () =>{
             }
             const{main} = json.weather[0];
             if(main === 'Clear'){
-                weatherIcon.src = 'images\clear.png';
+                weatherIcon.src = 'images/clear.png';
             }else if(main === 'Rain'){
-                weatherIcon.src = 'images\rain.png';
+                weatherIcon.src = 'images/rain.png';
             }else if(main === 'Haze'){
-                weatherIcon.src = 'images\mist.png';
+                weatherIcon.src = 'images/mist.png';
             }else if(main === 'Snow'){
-                weatherIcon.src = 'images\snow.png';
+                weatherIcon.src = 'images/snow.png';
             }else if(main === 'Clouds'){
                 weatherIcon.src = 'images\cloud.png';
             }
