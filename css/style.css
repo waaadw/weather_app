@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    min-height: 80vh;
+    background-color: #ccc;
+}
+.container{
+    width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+}
+.container .fon{
+    width: auto;
+    position: absolute;
+}
+.search-box, .inform-center, .details-info, .inform-left, .inform-right{
+    position: relative;
+}
+.container header{
+    display: flex;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(57, 88, 90);
+    background-color: #d2f2f5;
+    padding: 10px 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 1px solid #ccc;
+}
+header i{
+    margin: 0 8px 0 8px;
+    font-size: 25px;
+    color: rgb(57, 88, 90);
+}
+.search-box .info-txt{
+    display: none;
+    position: relative;
+    font-size: 16px;
+    text-align: center;
+    padding: 5px 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.search-box .info-txt.error{
+    color: #721c24;
+    display: block;
+    background: #f8d7da;
+    margin: 0 20px;
+    border: 1px solid #f5c6cb;
+}
+.search-box input{
+    width: 80%;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px 0 10px 20px;
+    text-align: center;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+}
+.search-box input::placeholder{
+    font-size: 18px;
+    font-weight: 400;
+}
+.search-box button{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 7px;
+    background: #fff;
+    margin:10px 0 10px 5px;
+    border: 1px solid #ccc;
+    transition: 0.3s ease;
+}
+.search-box button:hover{
+    color: #fff;
+    background: #ccc;
+}
+input, button{
+    display: inline-block;
+    vertical-align: middle;
+}
+.inform-center{
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin: 0 10px ;
+}
+.inform-center .center-left{
+    height: 40%;
+    width: 50%;
+    padding: 10px 0 10px 10px;
+    display: inline-block;
+}
+.inform-center .center-right{
+    height: 40%;
+    width: 50%;
+    float: right;
+    padding: 10px 0 10px 0;
+}
+.details-info{
+    display: block;
+    text-align: center;
+}
+.inform-left{
+    height: 40%;
+    width: 50%;
+    padding: 10px 0 10px 10px;
+    display: inline-block;
+}
+.inform-left, .inform-right{
+    display: inline-block;
+    vertical-align: middle;
+}
+.inform-right .inform-div{
+    height: 100%;
+    width: 100%;
+    float: right;
+    padding: 5px 0 25px 0;
+    margin-top: 0px;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+}
+
+.inform-left .top-left{
+    border-radius: 7px;
+    border: 1px solid #ccc;
+}
+.inform-left .bottom-left{
+    border-radius: 7px;
+    border: 1px solid #ccc;
+}
+#city{
+    font-weight: 900;
+    font-size: 22px;
+}
+#day{
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 5px;
+}
+#date{
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.inform-center .temperature{
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 10px;
+    padding-left: 15px;
+}
+.inform-center .celsius{
+    font-weight: 500;
+    font-size: 24px;
+    padding-left: 3px;
+}
+.temperature,.celsius{
+    display: inline-block;
+    vertical-align: center;
+}
+#weather-status{
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 auto;
+}
+.weather-icon{
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin: 8px auto 0 auto;
+}
+.top-left .wind-direction{
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 5px;
+}
+.top-left i{
+    font-size: 30px;
+    left: 40%;
+    margin-left: 5px;
+
+}
+.top-left .wind-speed{
+    font-size: 16px;
+    font-weight: 500;
+    text-align: end;
+    margin-left: 5px;
+}
+.top-left i,.wind-speed{
+    display: inline-block;
+    vertical-align: middle;
+}
+.bottom-left .sun-details-key, .sun-details-value{
+    display: inline-block;
+    vertical-align: middle;
+}
+.bottom-left .sun-details-key{
+    float: left;
+    font-size: 16px;
+    font-weight: 300;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.bottom-left .sun-details-value{
+    float: none;
+    font-size: 16px;
+    font-weight: 300;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+.inform-right .other-details-key, .other-details-value{
+    display: inline-block;
+    vertical-align: middle;
+}
+.inform-right .other-details-key{
+    font-size: 16px;
+    font-weight: 300;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.inform-right .other-details-value{
+    font-size: 16px;
+    font-weight: 300;
+    text-align: end;
+    margin-left: 30px;
+    margin-top: 6px;
+    padding-right: 5px;
+}
