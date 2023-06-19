@@ -88,7 +88,7 @@ search.addEventListener('click', () =>{
             }else if(main === 'Snow'){
                 weatherIcon.src = 'images/snow.png';
             }else if(main === 'Clouds'){
-                weatherIcon.src = 'images\cloud.png';
+                weatherIcon.src = 'images/cloud.png';
             }
 
             wind.innerHTML= `${parseInt(json.wind.speed)} m/s`;
