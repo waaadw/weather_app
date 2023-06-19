@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application v1.0</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <header><i class='bx bx-sun' ></i>Weather App<i class='bx bx-cloud-lightning'></i></header> 
+        <img class="fon" src="image\fon.jpg" alt="none">
+        <div class="search-box">
+            <p class="info-txt">Oops</p>
+            <input type="text"  placeholder="Enter city name">
+            <button class="bx bx-search"></button>
+        </div>
+        <div class="inform-center">
+            <div class="center-left">
+                <h1 class="city" id="city">City</h1>
+                <h2 id="date">April 19, 2023</h2>
+                <h3 id="day">Saturday</h3>
+                <h2 class="temperature">+ 22</h2>
+                <h3 class="celsius">°C</h3>
+            </div>
+            <div class="center-right">
+                <h1 id="weather-status">Clouds</h1>
+                <img class= "weather-icon" src="image/clear.png" alt="none">
+            </div>
+        </div>
+        <div class="details-info">Detailed information</div>
+        <div class="inform-left">
+            <div class="top-left">
+                <p class="wind-direction">Wind: North</p>
+                <i class='bx bx-down-arrow-circle' id="wind-arrow"></i>
+                <h2 class="wind-speed">0 m/s</h2>
+            </div>
+            <div class="bottom-left">
+                <div class="sun-details-key">
+                    <p>Sunrise </p>
+                    <p>Sunset </p>
+                </div>
+                <div class="sun-details-value">
+                    <p class="sunrise-time">0:00 am</p>
+                    <p class="sunset-time">0:00 pm</p>
+                </div>
+            </div>
+        </div>
+        <div class="inform-right">
+            <div class="inform-div">
+                <div class="other-details-key">
+                    <p>Humidity</p>
+                    <p>Pressure</p>
+                    <p>Feels like</p>
+                </div>
+                <div class="other-details-value">
+                    <p class="humidity">0 %</p>
+                    <p class="pressure">1005 hPa</p>
+                    <p class="temp-feels">20 °C</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
