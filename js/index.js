@@ -44,26 +44,6 @@ search.addEventListener('click', () =>{
             var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
             date.innerHTML = (months[dt.getMonth()] + " " + dt.getDate() + ", " + dt.getFullYear());
             
-            /*switch (json.weather[0].main){
-                case 'Clear':
-                    image.src = 'image\clear.png';
-                    break;
-                case 'Rain':
-                    image.src = 'image\rain.png';
-                    break;
-                case 'Haze':
-                    image.src = 'image\mist.png';
-                    break;
-                case 'Snow':
-                    image.src = 'image\cloud.png';
-                    break;
-                case 'Clouds':
-                    image.src = 'image\cloud.png';
-                    break;
-                default:
-                    image.src = 'image\cloud.png';
-            }*/
-
             const city = document.querySelector('.city');
             city.innerHTML = (json.name + ", " + json.sys.country);
             temperature.innerHTML = `+ ${parseInt(json.main.temp)}`;
@@ -100,15 +80,15 @@ search.addEventListener('click', () =>{
             }
             const{main} = json.weather[0];
             if(main === 'Clear'){
-                weatherIcon.src = 'image/clear.png';
+                weatherIcon.src = '..images/clear.png';
             }else if(main === 'Rain'){
-                weatherIcon.src = 'image/rain.png';
+                weatherIcon.src = '..images/rain.png';
             }else if(main === 'Haze'){
-                weatherIcon.src = 'image/mist.png';
+                weatherIcon.src = '..images/mist.png';
             }else if(main === 'Snow'){
-                weatherIcon.src = 'image/snow.png';
+                weatherIcon.src = '..images/snow.png';
             }else if(main === 'Clouds'){
-                weatherIcon.src = 'image/cloud.png';
+                weatherIcon.src = '..images/cloud.png';
             }
 
             wind.innerHTML= `${parseInt(json.wind.speed)} m/s`;
