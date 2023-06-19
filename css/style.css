@@ -9,7 +9,7 @@ body{
     display: flex;
     align-items: center;
     justify-content:center;
-    min-height: 80vh;
+    min-height: 50vh;
     background-color: #ccc;
 }
 .container{
